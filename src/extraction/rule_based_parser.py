@@ -1,7 +1,7 @@
 import re
 from typing import List, Dict
 
-# Simple sample lists for now
+# Simple sample lists
 SKILL_KEYWORDS = [
     "python", "java", "sql", "excel", "machine learning",
     "data analysis", "tensorflow", "pandas", "numpy", "c++"
