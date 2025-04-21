@@ -3,7 +3,8 @@ from pathlib import Path
 
 import sys
 import os
-sys.path.append(os.path.abspath(".")) 
+sys.path.append(os.path.abspath("."))
+sys.path.append(os.path.abspath("./src"))  
 
 from src.extraction.pdf_parser import extract_text_from_pdf
 from src.extraction.rule_based_parser import parse_resume
