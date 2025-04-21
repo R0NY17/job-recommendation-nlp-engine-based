@@ -1,10 +1,10 @@
-# 📄 Resume Parser & Job Recommendation Engine (NLP-based)
+# Resume Parser & Job Recommendation Engine (NLP-based)
 
 An end-to-end intelligent system to extract structured data from resumes and recommend matching job roles using both rule-based and semantic NLP techniques. Built with Python and Streamlit.
 
 ---
 
-## ✅ Features
+## Features
 
 - Upload resume PDF
 - Extract structured info: Skills, Education, Experience
@@ -17,13 +17,16 @@ An end-to-end intelligent system to extract structured data from resumes and rec
 
 ---
 
-## 🚀 Tech Stack
+## Tech Stack
 
 - Python
 - Streamlit
 - pdfplumber
 - scikit-learn (TF-IDF + Cosine Similarity)
-- sentence-transformers (BERT)
+- sentence-transformers (MiniLM)
 
 ---
 
+# 👤 Author
+  
+Made with purpose by Franklin Viegas
