@@ -2,6 +2,7 @@ import json
 from typing import List, Dict
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
+from utils.text_utils import clean_text
 
 def load_job_descriptions(filepath: str) -> List[Dict]:
     with open(filepath, "r", encoding="utf-8") as f:
@@ -10,7 +11,7 @@ def load_job_descriptions(filepath: str) -> List[Dict]:
 def match_resume_to_jobs(parsed_resume: Dict[str, List[str]], job_descriptions: List[Dict], top_n: int = 3) -> List[Dict]:
     resume_summary = " ".join(parsed_resume.get("skills", []) + parsed_resume.get("experience", [])).lower()
     
-    job_docs = [str(job["description"]).lower() for job in job_descriptions]
+    job_docs = [clean_text(job["description"]) for job in job_descriptions]
     
     docs = [resume_summary] + job_docs
 
